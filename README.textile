@@ -2,7 +2,7 @@ h1. vault2git
 
 SourceGear Vault repository to Git Repository Migration
 
-h2.Features:
+h2. Features:
 
 * Parallel processing
 * Migrate with commit history
