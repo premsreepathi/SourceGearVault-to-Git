@@ -1,0 +1,26 @@
+h1. vault2git
+
+SourceGear Vault repository to Git Repository Migration
+
+h2.Features:
+
+* Parallel processing
+* Migrate with commit history
+* Handle Special Characters
+* Labels to git tags migration with history
+
+h2. Requirements
+
+* Vault client installed (make sure client and server is same version ex: SourceGear Vault Standard Client 5.0.3(18802) / 10.1.0(1128))
+* rubyinstaller-devkit-2.7.8-1-x64 (ruby 2.7.8p225 (2023-03-30 revision 1f4d455848) [x64-mingw32])
+* Bundler gem: installed dependencies with @bundle install@ (Bundler version 2.1.4)
+* bundle install : gem install nokogiri  (version: 1.12.5  platform: x64-mingw32)
+* Based on your system specification change **slicelimit** in converter_parallel.rb file. It is parallel processing like multi threading. ex:  SGVault repo size is 100MB, slicelimit=30 means 30*size = 3000MB storage space is required in your system.
+
+Commmands:
+
+bundle exec ruby vault2git.rb --host <host> --username <username> --password <password> --repo <repository name> <source path> <destination/local path>
+ex:
+bundle exec ruby vault2git.rb —host 192.168.0.1 —username admin —password admin —repo "test" "$/Dev/" "C:/data"
+
+

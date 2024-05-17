@@ -1,0 +1,25 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    log4r (1.1.10)
+    mini_portile2 (2.6.1)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
+    nokogiri (1.12.5-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.12.5-x86-mingw32)
+      racc (~> 1.4)
+    racc (1.5.2)
+
+PLATFORMS
+  ruby
+  x64-mingw32
+  x86-mingw32
+
+DEPENDENCIES
+  log4r
+  nokogiri (~> 1.12.5)
+
+BUNDLED WITH
+   2.1.4
